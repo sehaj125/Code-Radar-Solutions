@@ -2,9 +2,8 @@
 
 int main() {
     int num;
-    scanf("%c",&num);
+    scanf("%d",&num);
     printf("Hexadecimal: %c",num);
-    scanf("%d",&num)
     printf("Octal: %d",num);
     return 0;
 }
