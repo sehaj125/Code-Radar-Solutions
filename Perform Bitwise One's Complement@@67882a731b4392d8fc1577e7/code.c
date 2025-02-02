@@ -2,7 +2,7 @@
 int main() {
     int num,complement;
     scanf("%d",&num);
-    result=~complement;
-    printf("%d",result);
+    complement = ~num;
+    printf("%d",complement);
     return 0;
 }
