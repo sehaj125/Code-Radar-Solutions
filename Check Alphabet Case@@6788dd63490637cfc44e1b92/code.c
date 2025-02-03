@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    char num;
-    scanf("%c",&num);
-    if(A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z){
+    char ch;
+    scanf("%c",&ch);
+    if(ch>='A' && ch<='Z'){
         printf("Uppercase",num);
     }
     else{
