@@ -3,7 +3,7 @@ int main() {
     int num;
     scanf("%d",&num);
     if(num % 5 == 0 && num % 11 == 0){
-        printf("Divisile",num);
+        printf("Divisible",num);
     }
     else{
         printf("Nor Divisible",num);
