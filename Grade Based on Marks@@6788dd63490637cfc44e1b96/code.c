@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    int main(){
         int marks;
         scanf("%d",&marks);
         if(marks>=90){
@@ -19,6 +18,6 @@ int main() {
         else if(marks<60){
             printf("F");    
         }
-    }
+    
     return 0;
 }
