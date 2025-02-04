@@ -8,13 +8,13 @@ int main() {
         if(marks>=90){
             grade = 'A';
         }
-        if else(marks>=80){
+        else if(marks>=80){
             grade = 'B';
         }
-        if else(marks>=70){
+        else if(marks>=70){
             grade = 'C';
         }
-        if else(marks>=60){
+        else if(marks>=60){
             grade = 'D';
         }
         else{
