@@ -6,10 +6,10 @@ int main() {
     int num;
     scanf("%d",&num);
     if(isInRange(num)){
-        printf("InRange",num);
+        printf("In Range",num);
     }
     else{
-        printf("OutRange",num);
+        printf("Out of Range",num);
     }
     return 0;
 }
