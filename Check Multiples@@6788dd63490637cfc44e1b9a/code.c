@@ -7,8 +7,8 @@ int isMultiple(int num1,int num2){
 }
 int main() {
     int num1,num2;
-    scanf("%d",&num1,&num2);
-    if(){
+    scanf("%d %d",&num1,&num2);
+    if(isMultiple(num1,num2)){
         printf("Yes",num1,num2);
     }
     else{
