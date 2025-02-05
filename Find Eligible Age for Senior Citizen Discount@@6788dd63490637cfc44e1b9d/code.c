@@ -1,6 +1,6 @@
 #include <stdio.h>
 int isEligibleForSeniorDiscount(int age){
-    return(age>=60);
+    return (age>=60);
 }
 int main() {
     int age;
