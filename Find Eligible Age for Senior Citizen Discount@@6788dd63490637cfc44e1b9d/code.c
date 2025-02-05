@@ -1,13 +1,15 @@
 #include <stdio.h>
-
+int isEligibleForSeniorDiscount(int age){
+    return(age>=60);
+}
 int main() {
     int age;
     scanf("%d",&age);
-    if(age>=60){
-        printf("Eligible",num);
+    if(isEligibleForSeniorDiscount(age)){
+        printf("Eligible",age);
     }
     else{
-        print("Not Eligible",num);
+        print("Not Eligible",age);
     }
     return 0;
 }
