@@ -6,10 +6,10 @@ int main() {
     int age;
     scanf("%d",&age);
     if(isEligibleForSeniorDiscount(age)){
-        printf("Eligible",age);
+        printf("Eligible");
     }
     else{
-        print("Not Eligible",age);
+        print("Not Eligible");
     }
     return 0;
 }
