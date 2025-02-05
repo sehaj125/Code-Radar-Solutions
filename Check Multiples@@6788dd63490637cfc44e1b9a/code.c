@@ -1,6 +1,6 @@
 #include <stdio.h>
 int isMultiple(int num1,int num2){
-    int (num2 == 0){
+    if (num2 == 0){
         return 0;
     }
     return (num1 % num2 == 0);
