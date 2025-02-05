@@ -6,7 +6,7 @@ int isMultiple(int num1,int num2){
     return (num1 % num2 == 0);
 }
 int main() {
-    int (isMultiple(num1,num2));
+    int num1,num2;
     scanf("%d",&num1,&num2);
     if(){
         printf("Yes",num1,num2);
