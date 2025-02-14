@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main(){
     int month;
-    printf("enter the number:");
     scanf("%d",&month);
 
     switch(month){
