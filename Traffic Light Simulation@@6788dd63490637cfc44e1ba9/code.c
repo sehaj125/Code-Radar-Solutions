@@ -1,21 +1,19 @@
 #include<stdio.h>
 int main(){
-    char light;
-    scanf("%c",&light);
-
-    switch(ligth){
-        case 'R':
-        printf("Stop");
-        break;
-        case 'G':
-        printf("Go");
-        break;
-        case 'Y':
-        printf("Slow Down");
-        break;
-        default:
-        printf("Invalid input");
-        break;
+    char c;
+    scanf("%c",&c){
+        if(c =='R'){
+            printf("Stop");
+        }
+        else if(c == 'G'){
+            printf("Go");
+        }
+        else if(c == 'Y'){
+            printf("Slow Down");
+        }
+        else{
+            printf("Invalis input");
+        }
     }
     return 0;
 }
