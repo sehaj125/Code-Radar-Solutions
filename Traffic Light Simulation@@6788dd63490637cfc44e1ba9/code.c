@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char c;
-    scanf("%c",&c){
+    scanf("%c",&c);
     if(c =='R'){
         printf("Stop");
     }
@@ -14,6 +14,5 @@ int main(){
     else{
         printf("Invalis input");
     }
-}
     return 0;
 }
