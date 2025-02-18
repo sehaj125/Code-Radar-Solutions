@@ -1,31 +1,29 @@
 #include <stdio.h>
 
 int main() {
-    char operator ;
-    double num1,num2;
-    printf("%c",&operator);
-    printf("%lf %lf",&num1,&num2);
-    switch(operator){
-        case '+':
-            printf("%.2lf + %.2lf = %.2lf",num1+num2);
-            break;
-        case '-':
-            printf("%.2lf - %.2lf = %.2lf",num1-num2);
-            break;
-        case '*':
-            printf("%.2lf * %.2lf = %.2lf",num1*num2);
-            break;
-        case '/':
-            if(num2 != 0){
-                printf("%.2lf / %.2lf = %.2lf",num1/num2);
-            }
-            else{
-                printf("Error! Division by zero");
-            }
-            break;
-        default:
-            printf("Error! Operator is not correct");
-            break;
+    int a,b;
+    char c;
+    scanf("%d %d",&a,&b);
+    scanf("%c",&c);
+    if(c == '+'){
+        printf("%d",a+b);
+    }
+    else if(c == '-'){
+        printf("%d",a-b);
+    }
+    else if(c == '*'){
+        printf("%d",a*b);
+    }
+    else if (c == '/'){
+        if(b!=0){
+            printf("%d",a/b);
+        }
+        else{
+            printf("error");
+        }
+    else{
+        printf("error");
+    }
     }
     return 0;
 }
