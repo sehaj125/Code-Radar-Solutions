@@ -14,4 +14,4 @@ def compress_string(s):
     return compressed_string if len(compressed_string) < len(s) else s
 
 input_string = "aaaaaaa"
-print(compress_string(input_string))  # Output: "a7"
+print(compress_string(input_string))
