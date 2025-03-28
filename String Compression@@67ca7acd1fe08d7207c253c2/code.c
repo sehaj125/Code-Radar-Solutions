@@ -13,5 +13,5 @@ def compress_string(s):
     compressed_string = ''.join(compressed)
     return compressed_string if len(compressed_string) < len(s) else s
 
-input_string = "aaaaaaa"
+input_string = \n
 print(compress_string(input_string))
