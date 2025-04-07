@@ -24,7 +24,7 @@ int main() {
 
     bubbleSort(arr, n);
 
-    printf("Sorted array: ");
+    printf("\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
