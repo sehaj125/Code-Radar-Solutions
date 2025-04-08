@@ -18,7 +18,7 @@ void findSecondLargest(int arr[], int n) {
     }
 
     if (secondLargest == INT_MIN) {
-        printf("%d\n",smallest);
+        printf("%d\n");
     } else {
         printf("%d\n", secondLargest);
     }
