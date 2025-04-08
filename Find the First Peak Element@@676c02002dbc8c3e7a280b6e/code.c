@@ -22,7 +22,7 @@ int main() {
     if (peak != -1) {
         printf("%d\n", peak);
     } else {
-        printf("%d\n",peak);
+        printf("%d\n",n,peak);
     }
 
     return 0;
