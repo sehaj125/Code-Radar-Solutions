@@ -1,38 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
 
-void rotateArray(int arr[], int n, int k) {
-    k = k % n;
-
-    for (int i = 0; i < k; i++) {
-        int first = arr[0];
-        for (int j = 0; j < n - 1; j++) {
-            arr[j] = arr[j + 1];
-        }
-        arr[n - 1] = first;
+void reverse(int arr[], int start, int end){
+    while (start < end){
+        int temp = arr[start];
+        arr[start]= arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
     }
 }
 
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+void rotateRight(int arr[], int n , int k){
+    reverse(arr, 0, n-1);
+    reverse(arr, 0, k-1);
+    reverse(arr, k , n-1);
 }
 
-int main() {
-    int n;
-    scanf("%d", &n);
+int main(){
+    int arr[] = {1,2,3,4,5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int k = 2;
 
-    int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d\n", &arr[i]);
+    rotateRight(arr, n, k);
+
+    for (int i = 0; i< n;i++){
+        printf("%d\n", arr[i]);
     }
-
-    int k;
-    scanf("%d\n", &k);
-
-    rotateArray(arr, n, k);
-    printArray(arr, n);
-
     return 0;
 }
