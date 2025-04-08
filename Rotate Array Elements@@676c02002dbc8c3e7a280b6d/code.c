@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 void rotateArray(int arr[], int n, int k) {
-    int temp[k]; 
+    k = k % n;
+
     for (int i = 0; i < k; i++) {
-        temp[i] = arr[i];
-    }
-    for (int i = 0; i < n - k; i++) {
-        arr[i] = arr[i + k];
-    }
-    for (int i = 0; i < k; i++) {
-        arr[n - k + i] = temp[i];
+        int first = arr[0];
+        for (int j = 0; j < n - 1; j++) {
+            arr[j] = arr[j + 1];
+        }
+        arr[n - 1] = first;
     }
 }
 
@@ -21,16 +20,16 @@ void printArray(int arr[], int n) {
 }
 
 int main() {
-    int n, k;
+    int n;
     scanf("%d", &n);
 
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    scanf("%d", &k);
 
-    k = k % n;
+    int k;
+    scanf("%d", &k);
 
     rotateArray(arr, n, k);
 
