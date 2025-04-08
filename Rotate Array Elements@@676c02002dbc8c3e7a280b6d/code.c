@@ -31,7 +31,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter the number of positions to rotate: ");
+    printf("%d\n");
     scanf("%d", &k);
 
     k = k % n;
