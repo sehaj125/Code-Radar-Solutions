@@ -22,23 +22,18 @@ void printArray(int arr[], int n) {
 
 int main() {
     int n, k;
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter the elements of the array: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    printf("%d\n");
     scanf("%d", &k);
 
     k = k % n;
 
     rotateArray(arr, n, k);
 
-    printf("Array after rotation: ");
     printArray(arr, n);
 
     return 0;
