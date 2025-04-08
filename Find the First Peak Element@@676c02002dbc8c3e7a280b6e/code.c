@@ -22,7 +22,7 @@ int main() {
     if (peak != -1) {
         printf("%d\n",peak);
     } else {
-        printf("No peak element found\n");
+        printf("%d\n");
     }
 
     return 0;
